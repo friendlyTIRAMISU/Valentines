@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+}
+
+/* Center container */
+.container {
+    text-align: center;
+}
+
+/* Bigger title */
+h1 {
+    font-size: 4em;          /* was 2.5em */
+    color: #d32f2f;
+}
+
+/* More spacing */
+.buttons {
+    margin-top: 40px;       /* was 20px */
+}
+
+/* Bigger YES button */
+.yes-button {
+    font-size: 2.2em;       /* was 1.5em */
+    padding: 20px 40px;     /* was 10px 20px */
+    margin-right: 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Bigger NO button */
+.no-button {
+    font-size: 2.2em;
+    padding: 20px 40px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+/* Bigger GIF */
+.gif_container img {
+    width: 350px;           /* ADD THIS */
+    margin-top: 40px;
+    animation: float 3s ease-in-out infinite;
+}
